@@ -3,6 +3,7 @@ import About from "./components/About";
 import Landingpage from "./components/Landingpage";
 import Navbar from "./components/Navbar";
 import Contact from "./components/Contact";
+import Work from "./components/Work";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
 
       <Landingpage />
       <About />
+      <Work />
       <Contact />
     </div>
   );

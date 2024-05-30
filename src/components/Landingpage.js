@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "../assets/landingpage.css";
 import arrow from "../assets/images/arrow-down.svg";
 import HeaderBG from "../assets/images/ALMABAHeader.svg";
@@ -6,25 +6,13 @@ import HeaderMobile from "../assets/images/ALMABAHeader-mobile.svg";
 import { Link } from "react-scroll";
 
 const Landingpage = () => {
-  const [zoomed, setZoomed] = useState(false);
-
-  useEffect(() => {
-    const zoomTimeout = setTimeout(() => {
-      setZoomed(true);
-    }, 700);
-
-    return () => clearTimeout(zoomTimeout);
-  }, []);
-
   return (
     <div
       name="home"
       id="home"
-      className={`bg-black w-screen h-screen flex justify-center items-center relative ${
-        zoomed ? "zoomed" : ""
-      }`}
+      className="bg-black w-screen h-screen flex justify-center items-center relative"
     >
-      <div className="iframe-container absolute w-full h-full z-20">
+      <div className="iframe-container absolute w-full h-full z-20 overflow-hidden">
         <div className="iframe-desktop hidden md:block w-full h-full">
           <iframe
             src="https://my.spline.design/untitled-dd3d448390466430c3a71eb725fc871e/"
