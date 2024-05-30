@@ -10,3 +10,19 @@ h1.zoomed {
     transform: scale(3); /* Adjust the scale factor as needed */
   }
 }
+.iframe-container {
+  width: 100%;
+  height: 100%;
+}
+
+.iframe-desktop,
+.iframe-mobile {
+  width: 100%;
+  height: 100%;
+}
+
+.spline-watermark {
+  display: none;
+  position: relative;
+  z-index: 0;
+}

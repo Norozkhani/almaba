@@ -3,6 +3,7 @@ import "../assets/landingpage.css";
 import arrow from "../assets/images/arrow-down.svg";
 import HeaderBG from "../assets/images/ALMABAHeader.svg";
 import HeaderMobile from "../assets/images/ALMABAHeader-mobile.svg";
+import { Link } from "react-scroll";
 
 const Landingpage = () => {
   const [zoomed, setZoomed] = useState(false);
@@ -17,39 +18,55 @@ const Landingpage = () => {
 
   return (
     <div
-      className={`bg-black w-screen h-screen flex justify-center items-center ${
+      name="home"
+      id="home"
+      className={`bg-black w-screen h-screen flex justify-center items-center relative ${
         zoomed ? "zoomed" : ""
       }`}
     >
-      <div className="text-white text-center font-mono subpixel-antialiased font-black z-10 md:flex md:justify-center">
-        <h1
-          className={`hidden md:inline-block text-white text-center font-mono subpixel-antialiased font-black   text-9xl ${
-            zoomed ? "zoomed" : ""
-          } md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl`}
-        >
-          ALMABA
-        </h1>
-        <div className="md:hidden grid grid-rows-3 relative">
-          <span className="text-9xl md:text-9xl">AL</span>
-          <span className="text-9xl md:text-9xl">MA</span>
-          <span className="text-9xl md:text-9xl">BA</span>
+      <div className="iframe-container absolute w-full h-full z-20">
+        <div className="iframe-desktop hidden md:block w-full h-full">
+          <iframe
+            src="https://my.spline.design/untitled-dd3d448390466430c3a71eb725fc871e/"
+            width="100%"
+            height="100%"
+            frameBorder="0"
+            title="Logo"
+          ></iframe>
+        </div>
+        <div className="iframe-mobile md:hidden w-full h-full">
+          <iframe
+            src="https://my.spline.design/untitled-bb4055b2fa056bdb53191048a1dada9e/"
+            frameborder="0"
+            width="100%"
+            height="100%"
+            title="logo"
+          ></iframe>
         </div>
       </div>
-      <img
-        src={arrow}
-        alt="arrow pointing downwards"
-        className="animate-bounce z-10 bottom-0 absolute"
-      />
+
+      <Link
+        to="about"
+        smooth={true}
+        duration={500}
+        className="z-30 bottom-0 absolute"
+      >
+        <img
+          src={arrow}
+          alt="arrow pointing downwards"
+          className="animate-bounce"
+        />
+      </Link>
 
       <img
         src={HeaderBG}
         alt="Landing page header background"
-        className="object-cover w-screen h-screen absolute hidden md:block"
+        className="object-cover w-screen h-screen absolute hidden md:block z-0"
       />
       <img
         src={HeaderMobile}
         alt="Landing page header background for mobile"
-        className="object-cover w-screen h-screen absolute md:hidden"
+        className="object-cover w-screen h-screen absolute md:hidden z-0"
       />
     </div>
   );
