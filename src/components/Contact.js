@@ -36,7 +36,7 @@ const Contact = () => {
         </p>
         <br />
         <p onClick={handleCopyPhone} style={{ cursor: "pointer" }}>
-          Phone: 123-456 78 90 {phoneCopied && "Copied!"}
+          Phone: 070-769 27 38 {phoneCopied && "Copied!"}
         </p>
       </div>
       <iframe
