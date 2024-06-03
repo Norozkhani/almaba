@@ -13,7 +13,7 @@ const Work = () => {
     <div
       id="work"
       name="work"
-      className="w-3/4 h-3/4 flex flex-col justify-center items-end  max-md: h-screen"
+      className="w-3/4 h-screen flex flex-col justify-center items-end  max-md: h-screen"
     >
       <h2 className="font-poppins text-3xl sm:text-5xl pt-10 text-center">
         Some work done in the last year
