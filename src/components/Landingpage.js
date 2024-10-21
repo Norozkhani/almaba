@@ -12,6 +12,8 @@ const Landingpage = () => {
       id="home"
       className="bg-black w-screen h-screen flex justify-center items-center relative"
     >
+      <div className="absolute top-0 left-0 w-full h-full z-30"></div>
+
       <div className="iframe-container absolute w-full h-full z-20 overflow-hidden">
         <div className="iframe-desktop hidden md:block w-full h-full">
           <iframe
@@ -25,7 +27,7 @@ const Landingpage = () => {
         <div className="iframe-mobile md:hidden w-full h-full">
           <iframe
             src="https://my.spline.design/untitled-bb4055b2fa056bdb53191048a1dada9e/"
-            frameborder="0"
+            frameBorder="0"
             width="100%"
             height="100%"
             title="logo"
@@ -37,7 +39,7 @@ const Landingpage = () => {
         to="about"
         smooth={true}
         duration={500}
-        className="z-30 bottom-0 absolute"
+        className="z-40 bottom-0 absolute"
       >
         <img
           src={arrow}
@@ -49,12 +51,12 @@ const Landingpage = () => {
       <img
         src={HeaderBG}
         alt="Landing page header background"
-        className="object-cover w-screen h-screen absolute hidden md:block z-0"
+        className="object-cover w-screen h-screen absolute hidden md:block z-10"
       />
       <img
         src={HeaderMobile}
         alt="Landing page header background for mobile"
-        className="object-cover w-screen h-screen absolute md:hidden z-0"
+        className="object-cover w-screen h-screen absolute md:hidden z-10"
       />
     </div>
   );
