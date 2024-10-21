@@ -13,27 +13,64 @@ const Work = () => {
     <div
       id="work"
       name="work"
-      className="w-3/4 h-screen flex flex-col justify-center items-end  max-md: h-screen"
+      className="w-screen h-screen flex flex-col justify-center items-center max-md:h-2/3"
     >
       <h2 className="font-poppins text-3xl sm:text-5xl pt-10 text-center">
-        Some work done in the last year
+        Previous Projects by ALMABA AB
       </h2>
-      <div className="w-3/4 h-2/5">
-        <Carousel className="">
-          <Carousel.Item interval={1000}>
-            <img src={work1} alt="" />
+      <p className="font-poppins w-screen px-5 text-xl sm:text-2xl text-center pt-6 md:w-4/5 xl:w-1/2">
+        Over the years, ALMABA AB has successfully completed a wide range of
+        projects, showcasing our expertise in delivering high-quality steel
+        structures. Our portfolio includes collaborations with prominent
+        companies, where we've contributed from the planning phase all the way
+        through to the final assembly.
+        <br /> <br />
+        Some of the key projects we've worked on involve complex installations
+        in industries such as manufacturing, infrastructure, and large-scale
+        construction. Each project highlights our commitment to precision,
+        efficiency, and client satisfaction.
+        <br /> <br />
+        Below, you can explore some of our featured works. Feel free to get in
+        touch if you'd like to learn more about any of these projects or discuss
+        how we can assist with your next venture!
+      </p>
+
+      <div className="w-full sm:w-3/4 lg:w-1/2 mt-10">
+        <Carousel className="h-full">
+          <Carousel.Item>
+            <img
+              className="d-block w-full h-60 sm:h-80 lg:h-auto object-cover"
+              src={work1}
+              alt="Project 1"
+            />
           </Carousel.Item>
           <Carousel.Item>
-            <img src={work2} alt="" />
+            <img
+              className="d-block w-full h-60 sm:h-80 lg:h-auto object-cover"
+              src={work2}
+              alt="Project 2"
+            />
           </Carousel.Item>
           <Carousel.Item>
-            <img src={work3} alt="" />
+            <img
+              className="d-block w-full h-60 sm:h-80 lg:h-auto object-cover"
+              src={work3}
+              alt="Project 3"
+            />
           </Carousel.Item>
           <Carousel.Item>
-            <img src={work4} alt="" />
+            <img
+              className="d-block w-full h-60 sm:h-80 lg:h-auto object-cover"
+              src={work4}
+              alt="Project 4"
+            />
           </Carousel.Item>
           <Carousel.Item>
-            <img src={work5} alt="" />
+            <img
+              className="d-block w-full h-60 sm:h-80 lg:h-auto object-cover"
+              src={work5}
+              alt="Project 5"
+            />
           </Carousel.Item>
         </Carousel>
       </div>
