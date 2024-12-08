@@ -15,10 +15,10 @@ const Work = () => {
       name="work"
       className="w-screen h-screen flex flex-col justify-center items-center max-md:h-2/3"
     >
-      <h2 className="font-poppins text-3xl sm:text-5xl pt-10 text-center">
+      <h2 className="font-poppins text-3xl sm:text-3xl pt-10 text-center">
         Previous Projects by ALMABA AB
       </h2>
-      <p className="font-poppins w-screen px-5 text-xl sm:text-2xl text-center pt-6 md:w-4/5 xl:w-1/2">
+      <p className="font-poppins w-screen px-5 text-l sm:text-xl text-left pt-6 md:w-4/5 xl:w-1/2">
         Over the years, ALMABA AB has successfully completed a wide range of
         projects, showcasing our expertise in delivering high-quality steel
         structures. Our portfolio includes collaborations with prominent

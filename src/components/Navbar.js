@@ -49,24 +49,24 @@ const Navbar = () => {
             : "absolute top-0 left-0 w-screen h-screen bg-black bg-opacity-90 flex flex-col justify-center items-center"
         }
       >
-        <li className="py-6 text-4xl">
+        <li className="py-6 text-2xl">
           <Link onClick={handleClick} to="home" smooth={true} duration={500}>
             Home
           </Link>
         </li>
-        <li className="py-6 text-4xl">
+        <li className="py-6 text-2xl">
           {" "}
           <Link onClick={handleClick} to="about" smooth={true} duration={500}>
             About
           </Link>
         </li>
-        <li className="py-6 text-4xl">
+        <li className="py-6 text-2xl">
           {" "}
           <Link onClick={handleClick} to="work" smooth={true} duration={500}>
             Work
           </Link>
         </li>
-        <li className="py-6 text-4xl">
+        <li className="py-6 text-2xl">
           {" "}
           <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
             Contact
