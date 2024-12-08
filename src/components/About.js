@@ -7,10 +7,10 @@ const About = () => {
       id="about"
       className="w-screen h-auto flex flex-col justify-center items-center py-16"
     >
-      <h2 className="font-poppins text-3xl sm:text-5xl pt-10">
+      <h2 className="font-poppins text-3xl sm:text-3xl pt-10">
         About ALMABA AB
       </h2>
-      <p className="font-poppins w-screen px-5 text-xl sm:text-2xl text-center pt-6 md:w-4/5 xl:w-1/2">
+      <p className="font-poppins w-screen px-5 text-l sm:text-xl text-left pt-6 md:w-4/5 xl:w-1/2">
         ALMABA AB is a seasoned consultant company specializing in the
         manufacture, delivery, and assembly of steel structures. With years of
         invaluable experience, ALMABA AB has been instrumental in leading and

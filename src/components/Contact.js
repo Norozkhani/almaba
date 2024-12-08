@@ -24,7 +24,7 @@ const Contact = () => {
     >
       <div className="absolute top-0 left-0 w-full h-full z-30"></div>
 
-      <div className="font-poppins z-40 text-3xl md:text-5xl p-10 flex flex-col justify-center items-center lg:w-1/2 text-center lg:text-center lg:justify-center lg:h-full h-1/2">
+      <div className="font-poppins z-40 text-l md:text-2xl p-10 flex flex-col justify-center items-center lg:w-1/2 text-center lg:text-center lg:justify-center lg:h-full h-1/2">
         <h2 className="leading-snug sm:leading-normal mb-4">
           If you have any thoughts or questions, do not hesitate to reach out!
         </h2>
